@@ -6,10 +6,12 @@ import { HiMoon, HiSun } from "react-icons/hi";
 export default function Header({ filters, filter, onFilterChange }) {
   const {darkMode , toggleDarkMode} = useDarkMode();
   
+  /* Active,Complete 상태 변경 버튼 클릭 시 */
   const handleButtonClick = (filter) => {
     onFilterChange(filter);
   };
 
+  /* DarkMode Toggle 버튼 클릭 시 */
   const handleDarkModeButtonClick = () => {
     toggleDarkMode();
   };
